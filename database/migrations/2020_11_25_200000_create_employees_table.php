@@ -19,7 +19,7 @@ class CreateEmployeesTable extends Migration
             $table->string('lname', 50);
             $table->string('fname', 50);
             $table->string('mname', 50);
-            $table->string('gender', 1);
+            $table->string('gender');
             $table->date('dob');
 
             $table->foreign('department_id')->references('id')->on('departments');
